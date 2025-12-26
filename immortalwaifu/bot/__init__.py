@@ -36,7 +36,7 @@ CHARA_CHANNEL_ID = os.getenv("CHARA_CHANNEL_ID", "-1002495220012")
 SUPPORT_CHAT_ID = os.getenv("SUPPORT_CHAT_ID", "-1002495220012")
 mongo_url = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://Immortal_X_Xwaifu:SagarGupta0902@waifu.bebbu8f.mongodb.net/waifu?retryWrites=true&w=majority&appName=waifu"
+    "mongodb+srv://immortal0in0world_db_user:%40Sagar_Gupta0902@cluster0.sh8kslt.mongodb.net/waifu?retryWrites=true&w=majority"
 )
 
 # Modified to support both image and video URLs
