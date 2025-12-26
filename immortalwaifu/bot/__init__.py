@@ -59,12 +59,13 @@ OWNER_ID = int(os.getenv("OWNER_ID", "7765919932"))
 # ✅ FIXED: `f` hata diya, direct filters use kiya
 command_filter = filters.create(lambda _, __, message: message.text and message.text.startswith("/"))
 
-# Agar aap Application use nahi kar rahe to ye hata do, warna python-telegram-bot install karo
+# Note: Using Pyrogram as the main framework, python-telegram-bot is not actively used
+# This is kept for compatibility but not actively used in the main bot loop
 try:
     from telegram.ext import Application
     application = Application.builder().token(TOKEN).build()
 except ImportError:
-    application = None  # Render me agar python-telegram-bot nahi hai to crash nahi hoga
+    application = None  # If python-telegram-bot is not available, set to None
 
 ZYRO = Client("Shivu", api_id=api_id, api_hash=api_hash, bot_token=TOKEN)
 
