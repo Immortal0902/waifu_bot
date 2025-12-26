@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: immortalwaifu
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m bot
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: TOKEN
+        sync: false
+      - key: MONGO_URL
+        sync: false
+      - key: GLOG
+        sync: false
+      - key: CHARA_CHANNEL_ID
+        sync: false
+      - key: SUPPORT_CHAT_ID
+        sync: false

@@ -1,0 +1,96 @@
+{
+  "name": "MrZyroWaifu",
+  "description": "A Telegram bot built with python-telegram-bot and pyrogram, using MongoDB for data storage.",
+  "repository": "https://github.com/yourusername/your-repo-name",
+  "keywords": ["python", "telegram-bot", "pyrogram", "mongodb"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID for the bot",
+      "value": "30999105",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash for the bot",
+      "value": "b1d3a4e0b8c48ca9b1fad5f86eaa786b",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "Telegram Bot Token",
+      "value": "8462520067:AAH8yXrfrDhbRJhARR2fslbTL2oh-9lTqDQ",
+      "required": true
+    },
+    "GLOG": {
+      "description": "Username or ID of the log channel",
+      "value": "knight",
+      "required": true
+    },
+    "CHARA_CHANNEL_ID": {
+      "description": "Username or ID of the character channel",
+      "value": "@knight_0090",
+      "required": true
+    },
+    "SUPPORT_CHAT_ID": {
+      "description": "ID of the support chat",
+      "value": "-1002890863384",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB connection URL",
+      "value": "mongodb+srv://Immortal_X_Xwaifu:SagarGupta0902@waifu.bebbu8f.mongodb.net/?retryWrites=true&w=majority&appName=waifu",
+      "required": true
+    },
+    "PHOTO_URL_1": {
+      "description": "First photo URL for the bot",
+      "value": "https://files.catbox.moe/7ccoub.jpg",
+      "required": false
+    },
+    "PHOTO_URL_2": {
+      "description": "Second photo URL for the bot",
+      "value": "https://files.catbox.moe/7ccoub.jpg",
+      "required": false
+    },
+    "SUPPORT_CHAT": {
+      "description": "Support chat URL",
+      "value": "https://t.me/+eg1W0oek5CMwYzg1",
+      "required": true
+    },
+    "UPDATE_CHAT": {
+      "description": "Update chat URL",
+      "value": "https://t.me/+eg1W0oek5CMwYzg1",
+      "required": true
+    },
+    "SUDO": {
+      "description": "Comma-separated list of sudo user IDs",
+      "value": "7577185215,7939978991",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner's Telegram user ID",
+      "value": "7939978991",
+      "required": true
+    }
+  },
+  "stack": "heroku-22",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "options": {
+        "version": "13"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "python -m pip install -r requirements.txt"
+  }
+}

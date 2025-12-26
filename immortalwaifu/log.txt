@@ -1,0 +1,132 @@
+[26-Dec-25 12:54:49 - INFO] - bot.modules - Modules to load: ['balance', 'bcast', 'check', 'ctime', 'eval', 'fav', 'gen', 'gift', 'guess', 'harem', 'hclaim', 'inlinequery', 'joinlog', 'leaderboard', 'massage', 'mongobg', 'ping', 'rank', 'rarity', 'shop', 'sips', 'start', 'sudo', 'total', 'transfer', 'update', 'upload', 'valentine']
+[26-Dec-25 13:16:41 - INFO] - bot.modules - Modules to load: ['balance', 'bcast', 'check', 'ctime', 'eval', 'fav', 'gen', 'gift', 'guess', 'harem', 'hclaim', 'inlinequery', 'joinlog', 'leaderboard', 'massage', 'mongobg', 'ping', 'rank', 'rarity', 'shop', 'sips', 'start', 'sudo', 'total', 'transfer', 'update', 'upload', 'valentine']
+[26-Dec-25 13:16:44 - ERROR] - asyncio - Future exception was never retrieved
+future: <Future finished exception=ConfigurationError('The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.')>
+Traceback (most recent call last):
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\database.py", line 926, in command
+    with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1864, in _conn_for_reads
+    server = self._select_server(read_preference, session, operation)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1799, in _select_server
+    topology = self._get_topology()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1737, in _get_topology
+    self._resolve_srv()
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 903, in _resolve_srv
+    res = uri_parser._parse_srv(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\uri_parser.py", line 163, in _parse_srv
+    nodes = dns_resolver.get_hosts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 157, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 131, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 125, in _resolve_uri
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.
+[26-Dec-25 13:29:49 - INFO] - bot.modules - Modules to load: ['balance', 'bcast', 'check', 'ctime', 'eval', 'fav', 'gen', 'gift', 'guess', 'harem', 'hclaim', 'inlinequery', 'joinlog', 'leaderboard', 'massage', 'mongobg', 'ping', 'rank', 'rarity', 'shop', 'sips', 'start', 'sudo', 'total', 'transfer', 'update', 'upload', 'valentine']
+[26-Dec-25 13:29:51 - ERROR] - asyncio - Future exception was never retrieved
+future: <Future finished exception=ConfigurationError('The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.')>
+Traceback (most recent call last):
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\database.py", line 926, in command
+    with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1864, in _conn_for_reads
+    server = self._select_server(read_preference, session, operation)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1799, in _select_server
+    topology = self._get_topology()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1737, in _get_topology
+    self._resolve_srv()
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 903, in _resolve_srv
+    res = uri_parser._parse_srv(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\uri_parser.py", line 163, in _parse_srv
+    nodes = dns_resolver.get_hosts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 157, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 131, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 125, in _resolve_uri
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.
+[26-Dec-25 13:31:54 - INFO] - bot.modules - Modules to load: ['balance', 'bcast', 'check', 'ctime', 'eval', 'fav', 'gen', 'gift', 'guess', 'harem', 'hclaim', 'inlinequery', 'joinlog', 'leaderboard', 'massage', 'mongobg', 'ping', 'rank', 'rarity', 'shop', 'sips', 'start', 'sudo', 'total', 'transfer', 'update', 'upload', 'valentine']
+[26-Dec-25 13:31:56 - ERROR] - asyncio - Future exception was never retrieved
+future: <Future finished exception=ConfigurationError('The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.')>
+Traceback (most recent call last):
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\database.py", line 926, in command
+    with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1864, in _conn_for_reads
+    server = self._select_server(read_preference, session, operation)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1799, in _select_server
+    topology = self._get_topology()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1737, in _get_topology
+    self._resolve_srv()
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 903, in _resolve_srv
+    res = uri_parser._parse_srv(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\uri_parser.py", line 163, in _parse_srv
+    nodes = dns_resolver.get_hosts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 157, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 131, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 125, in _resolve_uri
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The DNS query name does not exist: _mongodb._tcp.waifu.bebbu8f.mongodb.net.
+[26-Dec-25 13:34:01 - ERROR] - pyrogram.dispatcher - Telegram says: [400 ENTITY_BOUNDS_INVALID] - The message entity bounds are invalid (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "i:\telegram bot\immortalwaifu\bot\modules\check.py", line 12, in check_character
+    await message.reply_text("Please provide a Character ID: `/check <character_id>`")
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\types\messages_and_media\message.py", line 970, in reply_text
+    return await self._client.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 126, in send_message
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\immortal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.EntityBoundsInvalid: Telegram says: [400 ENTITY_BOUNDS_INVALID] - The message entity bounds are invalid (caused by "messages.SendMessage")
