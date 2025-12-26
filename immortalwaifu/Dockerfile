@@ -1,19 +1,21 @@
-FROM python:3.11-slim
+FROM python:3.10-slim
 
 WORKDIR /app
 
+# System deps (safe ones)
 RUN apt-get update && apt-get install -y \
-    curl wkhtmltopdf libxrender1 libxext6 fontconfig && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    curl libxrender1 libxext6 fontconfig \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --upgrade pip setuptools
+RUN pip install --upgrade pip setuptools
 
-# ✅ requirements.txt same folder me hai
-COPY requirements.txt /app/
+# requirements first (better caching)
+COPY requirements.txt .
 
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# ✅ Copy rest of the code
-COPY . /app/
+# copy full project
+COPY . .
 
-CMD ["python", "-m", "bot"]
+# start bot
+CMD ["python", "-m", "bot.main"]
