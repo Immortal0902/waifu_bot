@@ -32,8 +32,8 @@ api_id = os.getenv("API_ID", "30999105")
 api_hash = os.getenv("API_HASH", "b1d3a4e0b8c48ca9b1fad5f86eaa786b")
 TOKEN = os.getenv("TOKEN", "8462520067:AAH8yXrfrDhbRJhARR2fslbTL2oh-9lTqDQ")
 GLOG = os.getenv("GLOG", "-1002890863384")
-CHARA_CHANNEL_ID = os.getenv("CHARA_CHANNEL_ID", "-1002890863384")
-SUPPORT_CHAT_ID = os.getenv("SUPPORT_CHAT_ID", "-1002839513619")
+CHARA_CHANNEL_ID = os.getenv("CHARA_CHANNEL_ID", "-1002495220012")
+SUPPORT_CHAT_ID = os.getenv("SUPPORT_CHAT_ID", "-1002495220012")
 mongo_url = os.getenv(
     "MONGO_URL",
     "mongodb+srv://Immortal_X_Xwaifu:SagarGupta0902@waifu.bebbu8f.mongodb.net/waifu?retryWrites=true&w=majority&appName=waifu"
@@ -50,8 +50,8 @@ PHOTO_URL = [
     os.getenv("PHOTO_URL_2", "https://files.catbox.moe/7ccoub.jpg")
 ]
 
-SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/+eg1W0oek5CMwYzg1")
-UPDATE_CHAT = os.getenv("UPDATE_CHAT", "https://t.me/+eg1W0oek5CMwYzg1")
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/Maverick_Otaku")
+UPDATE_CHAT = os.getenv("UPDATE_CHAT", "https://t.me/knight_09020")
 SUDO = list(map(int, os.getenv("SUDO", "7765919932,7939978991").split(',')))
 OWNER_ID = int(os.getenv("OWNER_ID", "7765919932"))
 
