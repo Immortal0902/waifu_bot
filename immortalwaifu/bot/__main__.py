@@ -1,48 +1,29 @@
 import asyncio
 import importlib
-from pyrogram import idle
 from bot import *
 from bot.modules import ALL_MODULES
 
-def main():
+async def main():
+    # load modules
     for module_name in ALL_MODULES:
         importlib.import_module(f"bot.modules.{module_name}")
     LOGGER("bot.modules").info("All Features Loaded Successfully ✅")
 
-    asyncio.run(start_all())
+    # start pyrogram
+    if ZYRO:
+        await ZYRO.start()
+        LOGGER("bot").info("Pyrogram started ✅")
 
-async def start_all():
-    ptb_started = False
-    pyro_started = False
+    # start python-telegram-bot (non blocking)
+    if application:
+        await application.initialize()
+        await application.start()
+        LOGGER("bot").info("python-telegram-bot started ✅")
 
-    try:
-        # 🔹 Start Pyrogram
-        if ZYRO:
-            await ZYRO.start()
-            pyro_started = True
-            LOGGER("bot").info("Pyrogram started ✅")
+    LOGGER("bot").info("🤖 Bot is running (Render stable mode)")
 
-        # 🔹 Start python-telegram-bot (NON blocking)
-        if application:
-            await application.initialize()
-            await application.start()
-            ptb_started = True
-            LOGGER("bot").info("python-telegram-bot started ✅")
-
-        LOGGER("bot").info("🤖 Bot is running...")
-        idle()  # ⚠️ DO NOT await this
-
-    except Exception as e:
-        LOGGER("bot").error(f"Runtime error: {e}")
-
-    finally:
-        # 🔻 graceful shutdown (ONLY if started)
-        if ptb_started:
-            await application.stop()
-            await application.shutdown()
-
-        if pyro_started:
-            await ZYRO.stop()
+    # 🔒 KEEP PROCESS ALIVE FOREVER
+    await asyncio.Event().wait()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
